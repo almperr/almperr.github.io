@@ -16,6 +16,17 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+<!--Added Custom Classes-->
+p.meow {
+  width: 11em; 
+  border: 1px solid #000000;
+  word-wrap: break-word;
+}
+div.meow {
+  width: 100%; 
+  word-wrap: break-word;
+}
 </style>
 <body class="w3-black">
 
@@ -41,7 +52,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </a>
 </nav>
 
-
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
@@ -56,7 +66,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-containter" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <img src="images/LCD3b.jpg" alt="boy" class="w3-image" width="1800" height="200">
+    <img src="images/LCD3b.jpg" alt="boy" class="w3-image" style="width:100%">
     <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Alex Perr.</h1>
     <p>Electrical Engineering and Embedded Systems.</p>
     
@@ -78,36 +88,42 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <!--first half-->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-        <a href="pages/page1.html" class="w3-button">
-	  <div class="w3-container w3-green" style="width:100%">
-  	   <h1>Time Machine</h1>
-	  </div>
-
-           <img src="images/tm1.JPG" style="width:100%">
-
-          <div class="w3-container">
-           <p>A Delay Based Audio Multi-Effects Module</p>
-          </div>
+        <a href="pages/page1.html" class="w3-button" style="width:100%">
+	 <div class="w3-container w3-green">
+  	  <h1>Time Machine</h1>
+	 </div>
+         <div class="w3-container">
+          <p>A Dynamic Delay-Based Audio Multi-Effects Module</p>
+	  <p>(not an actual time machine...sorry)
+         </div>
 	</a>
-	<a href="https://www.w3schools.com" class="w3-button">
-	 <img src="images/main1.jpg" style="width:100%">
-	</a>
-	<a href="https://www.w3schools.com" class="w3-button">
-	 <img src="images/main1.jpg" style="width:100%">
+	<a href="https://www.w3schools.com" class="w3-button" style="width:100%">
+	 <div class="w3-container w3-purple">
+  	  <h1>Sonic Range Finder</h1>
+	 </div>
+         <div class="w3-container">
+          <p>Finds range with sound and shows range on LCD</p>
+         </div>
 	</a>
       </div>
      <!--second half-->
       <div class="w3-half">
         <a href="https://www.w3schools.com" class="w3-button">
-	<img src="images/main1.jpg" style="width:100%">
+	 <div class="w3-container w3-blue">
+  	  <h1>Phone Controlled Robot Arm</h1>
+	 </div>
+	 <div class="w3-container">
+          <p>A Robot Arm controlled by an Android app via Bluetooth</p>
+         </div>
 	</a>
 	<a href="https://www.w3schools.com" class="w3-button">
-	<img src="images/main1.jpg" style="width:100%">
+	 <div class="w3-container w3-orange">
+  	  <h1>Stepper Motor PWM Drive</h1>
+	 </div>
+	 <div class="w3-container">
+          <p>A PWM that drives a stepper motor at different speeds</p>
+         </div>
 	</a>
-	<a href="https://www.w3schools.com" class="w3-button">
-	<img src="images/main1.jpg" style="width:100%">
-	</a>
-      </div>
     <!-- End photo grid -->
     </div>
   <!-- End Portfolio Section -->
